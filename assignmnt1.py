@@ -31,6 +31,12 @@ while True:
         b["phone"]=list
         b["email"]=list1
         dict[name]=b
+        
+        f=open("phonebook.txt","w")
+        f.write(str(dict))
+        f.close()
+
+
 
     elif a==2:
      print(dict)

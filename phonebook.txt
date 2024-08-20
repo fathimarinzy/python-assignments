@@ -1,0 +1,1 @@
+{'ammu': {'name': 'ammu', 'address': 'palghat', 'phone': ['23446'], 'email': ['qwerty']}, 'rinzy': {'name': 'rinzy', 'address': 'kochi', 'phone': ['345666'], 'email': ['asddfgg']}}

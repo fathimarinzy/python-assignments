@@ -1,41 +1,48 @@
-
 class Info:
-    def __init__(self):
-        self.num_list = []
-        self.mail_list = []
-
     def phone(self):
-        self.num=int(input("How many phone numbers u want to add:" ))
-        # self.num_list=[ ]
-        for i in range(self.num):
-            a=int(input("Enter the phone number:"))
-            self.num_list.append(a)
-        print(  self.num_list)
-    def  email(self):
-        self.mail=int(input("How many emails u want to add:" ))
-        # self.mail_list=[ ]
-        for i in range(self.mail):
-            b=input("Enter the email address:")
-            self.mail_list.append(b)
-        print(self.mail_list)
-# f=Info()
-# f.phone()
-# f.email()
-class Detail:
-    def name(self):
-        self.nam =input("Enter the name:")
-        self.address =input("Enter the address:")
+        self.num_list = []
+        while True:
+            num = int(input("Enter the phone number: "))
+            self.num_list.append(num)
+            cho = input("Add another phone number? Type 'Y' or 'N': ").lower()
+            if cho == 'n':
+                break
+        return self.num_list
+    
+    def email(self):
+        self.mail_list = []
+        while True:
+            mail = input("Enter the Email address: ")
+            self.mail_list.append(mail)
+            cho = input("Add another Email address? Type 'Y' or 'N': ").lower()
+            if cho == 'n':
+                break
+        return self.mail_list
 
-    def view(self,info):
-        print("name", self.nam)
-        print("address",  self.address )
-        print("phone number", info.num_list)
-        print("Email",info.mail_list) 
-f=Info()
-f.phone()
-f.email()
-ff=Detail()
-ff.name()  
-print("details:")
-ff.view(f)
+class Detail:
+    book = {}
+    
+    def __init__(self, name, address, mail_list, num_list):
+        self.name = name
+        self.address = address
+        self.emails = mail_list
+        self.numbers = num_list
+        Detail.book[self.name] = {
+            "Name": self.name,
+            "Address": self.address,
+            "Phone Numbers": self.numbers,
+            "Emails": self.emails }  
+        print(Detail.book)                                               
+while True:
+    choice = int(input("\n1. Create a contact\n2. Update a contact\n3. Delete a contact\n4. View a contact\n5. View all contacts\n6. Exit\nEnter your choice: "))
+    
+    if choice == 1:
+        name = input("Enter the name: ")
+        address = input("Enter the address: ")
+        f = Info()
+        numbers = f.phone()
+        emails = f.email()
+        contact = Detail(name, address, emails, numbers)
+        
+        print("Contact created successfully.")
 

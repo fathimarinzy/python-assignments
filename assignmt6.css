@@ -1,0 +1,130 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: #e9ebee;
+    color: #333;
+}
+
+
+.header {
+    background-color: #4267b2;
+    color: white;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+    position:sticky;
+    top:0px;
+}
+h1{
+position:relative;
+left:450px;
+}
+.id1{
+   
+
+    position: relative;
+    right:400px;
+    top:50px;
+}
+.id2{
+    position:relative;
+    left:200px;
+    bottom:57px;
+}
+
+.button{
+    position:relative;
+    left: 400px;
+    bottom:95px;
+    width:5px;
+    
+
+}
+
+.button input[type="submit"]{
+    background-color: #4267b2;
+    border-radius: 5px;
+}
+
+
+.left{
+    padding: 20px 200px;
+    margin:100px 100px;
+  
+}
+p.h3{
+    font-size:25px;
+    color: #0a2b6e;
+}
+img.left{
+    height:300px;
+    width:550px;
+    bottom:90px;
+    position:relative;
+    right:300px;
+    
+}
+.right{
+    padding: 20px 200px;
+    margin:100px 100px;
+    position:relative;
+    left:10px;
+    top: -850px;
+    
+
+}
+p.h4{
+    position: relative;
+    left:450px;
+    color: #333;
+    font-size: 25px;
+}
+form{
+    position: relative;
+    left:450px;
+}
+.right form input[type="mail"]{
+    width:340px;
+}
+.right form input[type="password"]{
+    width:340px;
+}
+
+.right form label[for="para"]{
+    color: #4267b2;
+    display: inline-block;
+    position: relative;
+    top:19px;
+    
+}
+p.h5{
+    color: #333;
+}
+
+.h5 a{
+    text-decoration:none ;
+}
+
+button{
+    width:200px;
+    height:35px;
+    background-color: #42b72a;
+    color: white;
+    border:none;
+    border-radius: 5px;
+
+}    
+button:hover{
+    background-color:  #36a420;
+}
+.right form hr{
+    border: 0pxsolid black; 
+    
+}
+.h6 a{
+    text-decoration: none;
+}

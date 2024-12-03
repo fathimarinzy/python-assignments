@@ -1,0 +1,92 @@
+body{
+    background-image: url("pink\ sky.jpeg");
+   
+    text-align: center;
+}
+h3{
+   
+    text-align: center;
+}
+
+button{
+    background-color: rgb(179, 17, 179);
+    width: 75px;
+    height: 35px;
+    
+}
+form{
+   
+    background: rgba(255, 255, 255, 0.9);
+    width: 700px;
+    margin: 50px auto;
+    padding: 20px 40px;
+    border-radius: 10px;
+    /* text-align: center; */
+    
+}
+
+.id1{
+   left:20px;
+   position:relative;
+}
+.id1 input[type="number"]{
+    left:6px;
+    position:relative;
+}
+.id2{
+    left:81px;
+    position:relative;
+
+}
+.id3{
+    right:150px;
+    position: relative;
+}
+
+.id4 {
+    right:200px;
+    position: relative;
+}
+.h1{
+    left:205px;
+    position:relative;
+    top:-50px; 
+}
+.id4 input[type="radio"]{
+    position:relative;
+    left:500px; 
+    bottom:35px;
+    display: flex;
+}
+.id5{
+    right:85px;
+    position: relative;
+}
+.id6{
+    right:190px;
+    position:relative;
+}
+.h2{
+    left:230px;
+    position:relative;
+    top:-53px; 
+
+}
+.id6 input[type="checkbox"]{
+    position:relative;
+    left:500px; 
+    bottom:35px;
+    display: flex;
+}
+
+.id7{
+    right:50px;
+    position:relative;
+   
+}
+.h3{
+    left:10px;
+    position:relative;
+   
+
+}

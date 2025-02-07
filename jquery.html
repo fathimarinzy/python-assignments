@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Name"><br><br>
+    <input type="text" id="age" placeholder="Age"><br><br>
+    <input type="text" id="place" placeholder="Place"><br><br>
+    <button id="addRowBtn">Add Row</button><br><br>
+
+    <table id="datatable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Place</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function(){
+            function addRow(){
+                var name=$('#name').val();
+                var age=$('#age').val();
+                var place=$('#place').val();
+                $('#datatable tbody').append('<tr><td>' + name + '</td><td>' + age + '</td><td>' + place + '</td></tr>');
+                $('#name').val('');
+                $('#age').val('');
+                $('#place').val('');
+            }
+            $('#addRowBtn').on('click', addRow);
+        });
+    </script>
+</body>
+</html>
